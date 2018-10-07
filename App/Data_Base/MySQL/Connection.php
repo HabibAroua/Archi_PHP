@@ -1,4 +1,5 @@
 <?php
+    namespace Connect;
 	class Connection
 	{
 		private $host; //server address
@@ -30,5 +31,6 @@
 		}
 	    
 	}
+	
 ?>
 
