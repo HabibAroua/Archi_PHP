@@ -1,10 +1,79 @@
-<!doctype html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>ex5</title>
+        <META http-equiv="Content-Type" content="text/html; charset=utf-8">
     </head>
     <body>
-        
+        <div>
+            <table style="width:50%" cellpadding="10" cellspacing="0" bgcolor="#FAD7A0">
+                <tr>
+	                <td> <strong>Civilité</strong></td>
+	                <td>
+                        <form target="_blank">
+                            <input type="radio" name="Civilité" value="Mademoiselle"> Mademoiselle
+                            <input type="radio" name="Civilité" value="Madame"> Madame
+                            <input type="radio" name="Civilité" value="Monsieur"> Monsieur
+                        </form>
+                    </td>
+	            </tr>
+	            <tr>
+                    <td> <b>Nom/Prénom</b> </td>
+	                <td> <input type="text" name="Nom/Prénom" size="50"></td>
+	            </tr>
+	            <tr>
+                    <td>
+                        <b>
+                            Adresse
+                        </b>
+                    </td>
+	                <td>
+                        <textarea rows="5" cols="50">
+                            Rue N°Code postale
+                        </textarea>
+                    </td>
+                </tr>
+	            <tr>
+	                <td>
+                        <b>
+                            N°postal/Localité
+                        </b>
+                    </td>
+	                <td>
+                        <input type="number" name="N°postal" size="10">
+                        <input type="text" name="Localité" size="10" value="Lausanne">
+                    </td>
+	            </tr>
+	            <tr>
+                    <td>
+                        <b>
+                            Plateforme(s)
+                        </b>
+                    </td>
+                    <td>
+                        <form target="_blank">
+                            <input type="checkbox" name="choix1" value="1"> Windows
+                            <input type="checkbox" name="choix2" value="2"> Macintosh
+                            <input type="checkbox" name="choix3" value="3"> Unix
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>
+                            Application(s)
+                        </b>
+                    </td>
+                    <td>
+                        <select name="News" size="5" multiple>
+                            <option>Bureautique</option>
+                            <option>DAO</option>
+                            <option>Statistique</option>
+			                <option>SGBD</option>
+			                <option>Internet</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </body>
 </html>
