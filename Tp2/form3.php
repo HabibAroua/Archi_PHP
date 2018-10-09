@@ -18,7 +18,8 @@
             aff2<input type="checkbox" name="ch[]" value="aff2" />
             aff3<input type="checkbox" name="ch[]" value="aff3" />
             <br>
-            gender : Male <input type="radio" name="choix" value="M" checked /> Female <input type="radio" name="choix" value="F" />
+            gender : Male <input type="radio" name="choix" value="M" checked />
+            Female <input type="radio" name="choix" value="F" />
         </form>
     </body>
 </html>
