@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
+        <META http-equiv="Content-Type" content="text/html; charset=utf-8">
     </head>
     <body>
         <form   method="POST" action="traitement.php">
