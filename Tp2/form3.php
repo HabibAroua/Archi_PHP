@@ -13,7 +13,12 @@
                 <option vert="vert">Vert</option>
                 <option bleu="bleu">Bleu</option>
             </select>
+            <br>
+            aff1<input type="checkbox" name="ch[]" value="aff1" />
+            aff2<input type="checkbox" name="ch[]" value="aff2" />
+            aff3<input type="checkbox" name="ch[]" value="aff3" />
+            <br>
+            gender : Male <input type="radio" name="choix" value="M" checked /> Female <input type="radio" name="choix" value="F" />
         </form>
-
     </body>
 </html>

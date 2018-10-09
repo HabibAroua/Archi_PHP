@@ -11,4 +11,19 @@
             echo $v ."<br>";
         }
     }
+    
+    if((isset($_POST['ch'])) && (is_array($_POST['ch']) ))
+    {
+        foreach ($_POST['ch']  as  $v)
+        {
+            echo $v ." ";
+        }
+    }
+    
+    if(isset($_POST['choix']))
+    {
+        echo 'le choix est '.$_POST['choix'];
+    }
+    
+    
 ?>
