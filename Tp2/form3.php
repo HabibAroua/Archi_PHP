@@ -20,6 +20,8 @@
             <br>
             gender : Male <input type="radio" name="choix" value="M" checked />
             Female <input type="radio" name="choix" value="F" />
+            <br>
+            
         </form>
     </body>
 </html>
