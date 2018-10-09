@@ -14,6 +14,7 @@
             "<li>Prenom : $prenom</li>".
             "<li>Age : $age </li>".
             "</ul>";
+            echo '<br>';
         }
     }
     else
