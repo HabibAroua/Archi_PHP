@@ -7,6 +7,6 @@
         <form name="formEtudiant" action="Enregistrement.php" method="POST" enctype="multipart/form-data">
             <input type="file" name="monFichier" />
             <input type="submit" value="Envoyer" />
-        </form> 
+        </form>
     </body>
 </html>
