@@ -91,6 +91,3 @@
         </form>
     </body>
 </html>
-<!--
-<input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">
--->
