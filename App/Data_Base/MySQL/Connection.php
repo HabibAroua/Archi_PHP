@@ -25,11 +25,50 @@
 			}
 		}
 		
-	    
+		public function getHost()
+		{
+			return $this->host;
+		}
+		
+		public function setHost($host)
+		{
+			$this->host=$host;
+		}
+		
+		public function getDbname()
+		{
+			return $this->dbname;
+		}
+		
+		public function setDbname($dbname)
+		{
+			$this->dbname=$dbname;
+		}
+		
+		public function getUsername()
+		{
+			return $this->username;
+		}
+		
+		public function setUsername($username)
+		{
+			$this->username=$username;
+		}
+		
+		public function getPassword()
+		{
+			return $this->password;
+		}
+		
+		public function setPassword($password)
+		{
+			$this->password=$password;
+		}
+		
 	}
 	$connection=new Connection('localhost','Test','root','');
 	
-	$query="insert into etudiant values(null,'Salah','Ben Abdelkader')";
+	$query="insert into etudiant values(null,'Hatem','Aziza')";
 	$res=$connection->con->exec($query);
 	if($res!=0)
 	{
