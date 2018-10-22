@@ -10,8 +10,8 @@
             <br>
             <select name="couleur[]" multiple="multiple">
                 <option value="rouge">Rouge</option>
-                <option vert="vert">Vert</option>
-                <option bleu="bleu">Bleu</option>
+                <option value="vert">Vert</option>
+                <option value="bleu">Bleu</option>
             </select>
             <br>
             aff1<input type="checkbox" name="ch[]" value="aff1" />
