@@ -1,4 +1,5 @@
 <?php
+
     $host='localhost';
 	$dbname='test';
 	$username='root';	
@@ -11,4 +12,6 @@
 	{							
 		echo "connexion	a	la	base	a	echouee";
 	}
+	
+	//$lastId=mysqli_insert_id($conn);
 ?>

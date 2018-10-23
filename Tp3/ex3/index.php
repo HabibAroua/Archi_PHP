@@ -78,8 +78,6 @@
                                 global $con;
                                 $sql="select * from categorie order by idCategorie";
                                 $res=$con->query($sql);
-		 	                    $i=0;
-		 	                    $n=0;
                                 while($tab=$res->fetch(PDO::FETCH_NUM))
                                 {
                                     echo "<option values='$tab[0]'>$tab[1]</option>";
@@ -112,6 +110,17 @@
                         return false;
                     }
                 }
+				
+				function getIdUser($login)
+				{
+					global $con;
+                    $sql="select idUser from utilisateur where login='$login'";
+                    $res=$con->query($sql);
+                    while($tab=$res->fetch(PDO::FETCH_NUM))
+                    {
+                        echo "<option values='$tab[0]'>$tab[1]</option>";
+                    }
+				}
                 
                 if(isset($_POST['bt1']))
                 {
@@ -127,17 +136,16 @@
                             $login=$_POST['login'];
                             $password=$_POST['password'];
                             $siteWeb=$_POST['siteWeb'];
-                            $test=input("insert into utilisateur values (null,'$nom','$prenom','$annee-$mois-$jour','$siteWeb','$login','$password')");
-                            if($test===true)
+                            $test1=input("insert into utilisateur values (null,'$nom','$prenom','$annee-$mois-$jour','$siteWeb','$login','$password')");
+							
+                            if($test1===true)
                             {
-                                echo"<script> alert('Ajout affectué'); </script>";
+                                echo"<script> alert('Ajout d utilisateur affectué'); </script>";
                             }
                         }
-						
                     }
                 }
             ?>
         </form>
-        
     </body>
 </html>

@@ -25,10 +25,8 @@ alter table UtilisateurCategorie add CONSTRAINT fk3 FOREIGN key(idUser) REFERENC
 CREATE table UtilisateurEmail
 (
     idUser int , 
-    eMail varchar(30) 
+    eMail varchar(30) primary key 
 );
 
-alter table UtilisateurEmail add constraint fk4 PRIMARY key(idUser,eMail);
-alter table UtilisateurEmail add CONSISTENT fk5 FOREIGN key(idUser) REFERENCES utilisateur(idUser);
-
 INSERT INTO `utilisateur` (`idUser`, `nom`, `prenom`, `dateNaissance`, `siteWeb`, `login`, `motDePasse`) VALUES (NULL, 'Salah', 'Ali', DATE('15/11/1994'), 'www.wwww.ww', 'aeaea', 'aze')
+alter table UtilisateurEmail add constraint fk5 FOREIGN Key(idUser) REFERENCES utilisateur(idUser);
