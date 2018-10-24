@@ -11,7 +11,6 @@
     catch(PDOException	$pe)	
 	{							
 		echo "connexion	a	la	base	a	echouee";
-	}
-	
+	}	
 	//$lastId=mysqli_insert_id($conn);
 ?>
