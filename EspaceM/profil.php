@@ -23,8 +23,16 @@
              Psudo <?php echo $userinfo['pseudo'] ?>
              <br>
              Mail <?php echo $userinfo['mail'] ?>
+             <br>
             <?php
-                
+                if(isset($_SESSION['id']) AND  $userinfo['id']==$_SESSION['id'])
+                {
+            ?>
+            <a href="#">Editer votre profil</a>
+            <br>
+            <a href="deconnexion.php">Se déconncter</a>
+            <?php
+                }
             ?>
         </div>
     </body>
