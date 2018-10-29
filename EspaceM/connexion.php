@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    
     $bdd =new PDO('mysql:host=127.0.0.1; dbname=espace_membre','root','');
     
     if(isset($_POST['formconnexion']))
@@ -14,11 +14,12 @@
             $userexist=$req->rowCount();
             if($userexist == 1)
             {
+                session_start();
                 $userinfo=$req->fetch();
                 $_SESSION['id']=$userinfo['id'];
                 $_SESSION['pseudo']=$userinfo['pseudo'];
                 $_SESSION['mail']=$userinfo['mail'];
-                header("Location : profil.php?=".$_SESSION['id']);
+                header("location : profil.php?=".$_SESSION['id']);
             }
             else
             {
@@ -41,7 +42,7 @@
         <div align="center">
             <h3>Connexion</h3>
             <br><br><br>
-            <form method="POST" action="">
+            <form method="POST" action="connexion.php">
                 <input type="text" name="mailconnect" placeholder="Mail" />
                 <input type="password" name="password" placeholder="Mot de passe" />
                 <input type="submit" name="formconnexion" value="Se connecter" />

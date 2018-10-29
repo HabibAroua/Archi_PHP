@@ -33,6 +33,10 @@
             <a href="deconnexion.php">Se déconncter</a>
             <?php
                 }
+                else
+                {
+                    echo "echoué";
+                }
             ?>
         </div>
     </body>

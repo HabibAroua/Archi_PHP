@@ -19,10 +19,12 @@ $login_valide = "habib";
 $pwd_valide = "habib";
 
 // on teste si nos variables sont définies
-if (isset($_POST['login']) && isset($_POST['pwd'])) {
+if (isset($_POST['login']) && isset($_POST['pwd']))
+{
 
 	// on vérifie les informations du formulaire, à savoir si le pseudo saisi est bien un pseudo autorisé, de même pour le mot de passe
-	if ($login_valide == $_POST['login'] && $pwd_valide == $_POST['pwd']) {
+	if ($login_valide == $_POST['login'] && $pwd_valide == $_POST['pwd'])
+	{
 		// dans ce cas, tout est ok, on peut démarrer notre session
 
 		// on la démarre :)
@@ -38,10 +40,11 @@ if (isset($_POST['login']) && isset($_POST['pwd'])) {
 		// Le visiteur n'a pas été reconnu comme étant membre de notre site. On utilise alors un petit javascript lui signalant ce fait
 		echo '<body onLoad="alert(\'Membre non reconnu...\')">';
 		// puis on le redirige vers la page d'accueil
-		echo '<meta http-equiv="refresh" content="0;URL=index.htm">';
+		echo '<meta http-equiv="refresh" content="0;URL=login.php">';
 	}
 }
-else {
+else
+{
 	echo 'Les variables du formulaire ne sont pas déclarées.';
 }
 ?>
