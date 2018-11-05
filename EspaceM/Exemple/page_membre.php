@@ -3,7 +3,7 @@
 session_start ();
 
 // On récupère nos variables de session
-if (isset($_SESSION['login']) && isset($_SESSION['pwd'])) {
+if (isset($_SESSION['login']) && isset($_SESSION['pwd']) && isset($_COOKIE['login']) ) {
 
 	// On teste pour voir si nos variables ont bien été enregistrées
 	echo '<html>';
@@ -21,4 +21,5 @@ if (isset($_SESSION['login']) && isset($_SESSION['pwd'])) {
 else {
 	header ('location: login.php');
 }
+
 ?>
